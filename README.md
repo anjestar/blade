@@ -1,2 +1,2 @@
 # Blade
-Blade is a high-performance web framework.
+Blade is a high-performance php framework.
