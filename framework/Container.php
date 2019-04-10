@@ -20,7 +20,7 @@ class Container {
      * @param null $concrete
      * @param bool $shared
      *
-     * @author Gecco <liuxin@aladinfun.com>
+     * @author Gecco <up.lxin@gmail.com>
      * @date   2019/4/3
      */
     public function bind($abstract, $concrete = null, $shared = false) {
@@ -40,7 +40,7 @@ class Container {
      * @param $abstract
      * @param $concrete
      *
-     * @author Gecco <liuxin@aladinfun.com>
+     * @author Gecco <up.lxin@gmail.com>
      * @date   2019/4/3
      */
     public function singleton($abstract, $concrete) {
@@ -52,7 +52,7 @@ class Container {
      * @param $concrete
      *
      * @return \Closure
-     * @author Gecco <liuxin@aladinfun.com>
+     * @author Gecco <up.lxin@gmail.com>
      * @date   2019/4/3
      */
     public function getClosure($abstract, $concrete) {
@@ -66,7 +66,7 @@ class Container {
      * @param $abstract
      *
      * @return mixed
-     * @author Gecco <liuxin@aladinfun.com>
+     * @author Gecco <up.lxin@gmail.com>
      * @date   2019/4/3
      * @throws \ReflectionException
      */
@@ -84,7 +84,7 @@ class Container {
      * @param $abstract
      *
      * @return mixed
-     * @author Gecco <liuxin@aladinfun.com>
+     * @author Gecco <up.lxin@gmail.com>
      * @date   2019/4/3
      */
     public function getConcrete($abstract) {
@@ -99,7 +99,7 @@ class Container {
      * @param $concrete
      *
      * @return bool
-     * @author Gecco <liuxin@aladinfun.com>
+     * @author Gecco <up.lxin@gmail.com>
      * @date   2019/4/4
      */
     public function isBuildable($abstract, $concrete) {
@@ -111,7 +111,7 @@ class Container {
      *
      * @return mixed|object
      * @throws \ReflectionException
-     * @author Gecco <liuxin@aladinfun.com>
+     * @author Gecco <up.lxin@gmail.com>
      * @date   2019/4/4
      */
     public function build($concrete) {
@@ -143,7 +143,7 @@ class Container {
      * @param array $dependencies
      *
      * @return array
-     * @author Gecco <liuxin@aladinfun.com>
+     * @author Gecco <up.lxin@gmail.com>
      * @date   2019/4/4
      * @throws \Exception
      */
@@ -163,7 +163,7 @@ class Container {
      *
      * @return mixed
      * @throws \Exception
-     * @author Gecco <liuxin@aladinfun.com>
+     * @author Gecco <up.lxin@gmail.com>
      * @date   2019/4/4
      */
     public function resolveNonClass(\ReflectionParameter $parameter) {
@@ -177,7 +177,7 @@ class Container {
      * @param \ReflectionParameter $parameter
      *
      * @return mixed
-     * @author Gecco <liuxin@aladinfun.com>
+     * @author Gecco <up.lxin@gmail.com>
      * @date   2019/4/4
      * @throws \ReflectionException
      */
