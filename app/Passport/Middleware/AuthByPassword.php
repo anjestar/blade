@@ -21,7 +21,7 @@ class AuthByPassword {
         //开始验证
         $hash = password_hash($user->password, OPENSSL_ALGO_SHA1);
         if (!password_verify($password, $hash)) {
-            throw new \Exception("401 Unauthorized.", 10001);
+            throw new \Exception("401 Unauthorized.", 401);
         }
     }
 }

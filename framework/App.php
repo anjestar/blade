@@ -12,7 +12,7 @@ class App {
     public function run() {
         //初始化错误捕获
         set_exception_handler(function ($exception) {
-            header('Content-Type', 'application/json');
+            header('Content-Type:application/json', true, $exception->getCode());
             echo json_encode([
                 'msg' => $exception->getMessage(),
                 'code' => $exception->getCode(),
