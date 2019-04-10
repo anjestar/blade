@@ -10,6 +10,14 @@ class App {
      * @date   2019/4/10
      */
     public function run() {
+        //初始化错误捕获
+        set_exception_handler(function ($exception) {
+            header('Content-Type', 'application/json');
+            echo json_encode([
+                'msg' => $exception->getMessage(),
+                'code' => $exception->getCode(),
+            ]);
+        });
         //初始化容器
         $container = new Container();
         //绑定请求
@@ -22,4 +30,5 @@ class App {
         //Todo:响应处理
         echo $result;
     }
+
 }
