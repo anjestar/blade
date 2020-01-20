@@ -1,5 +1,5 @@
 {
-  "name": "gecco/blade.php",
+  "name": "gecco/pa",
   "description": "as blade",
   "type": "library",
   "require": {
@@ -7,7 +7,6 @@
   },
   "autoload": {
     "psr-4": {
-      "App\\": "app",
       "Blade\\": "src/components"
     },
     "files": [
