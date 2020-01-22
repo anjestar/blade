@@ -19,7 +19,8 @@ class ExceptionHandler
             mkdir($basePath, '755', TRUE);
         }
         $datetime = date("Y-m-d H:i:s");
-        $log = "{$datetime}|[level]|{$exception->getMessage()}|{$exception->getCode()}|{$exception->getFile()}|{$exception->getLine()}|{$exception->getTrace()[0]}\n";
+        $trace = json_encode($exception->getTrace()[0]);
+        $log = "{$datetime}|[level]|{$exception->getMessage()}|{$exception->getCode()}|{$exception->getFile()}|{$exception->getLine()}|{$trace}\n";
         file_put_contents($logPath, $log, FILE_APPEND);
         $data = [
             'msg' => $exception->getMessage(),
